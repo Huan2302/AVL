@@ -62,7 +62,6 @@ public class RatingQuery {
     }
 
     public void addEdge(Customer u, Product v, int w){
-		////code here
         edges.add(new Rating(u,v,w));
 	}
 
@@ -95,7 +94,6 @@ public class RatingQuery {
     }
 
     public ArrayList<Product> query1(String customerId){
-        //code here and change the return value
         ArrayList<Product> list= new ArrayList<>();
         for (Rating item:edges){
             if (item.getCustomer().getCustomerId().equals(customerId)){
@@ -108,7 +106,6 @@ public class RatingQuery {
     }
 
     public Integer query2(int productId){
-        //code here and change the return value
         int count = 0;
         for (Rating item:edges){
             if (item.getCustomer().getGender().equals("M")){
@@ -141,7 +138,6 @@ public class RatingQuery {
             M=0;
             F=0;
         }
-        //code here and change the return value
         return list;
     }
 
