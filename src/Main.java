@@ -39,6 +39,7 @@ public class Main {
                 break;
             default:
                 System.out.println("Incorrect argument");
+
         }
     }
 }
